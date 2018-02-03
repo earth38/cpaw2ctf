@@ -1,0 +1,44 @@
+
+//<![CDATA[
+var contents_363 = '<span><a target="_blank" href="http://g.msn.com/0AD00001/1687391.1?!&amp;&amp;PID=8251423&amp;UIT=G&amp;TargetID=8114306&amp;AN=3752894&amp;PG=CAE9UT">Best inbox organizer? New Hotmail!</A></span>';
+var fh_363 = null;
+if (document.body && document.body.id && document.body.id.length > 0)
+{
+	fh_363=parent.document.getElementById(document.body.id);
+}
+
+if (navigator.appVersion.indexOf("Win")>=0 && parseFloat(navigator.appVersion.substr(navigator.appVersion.indexOf("MSIE ")+5))>=4)
+{
+	try
+	{
+		if(!fh_363 || typeof(inDapIF) == "undefined")
+		{
+			dlWrite();
+		}
+		else
+		{
+			fh_363.parentNode.insertAdjacentHTML('afterBegin', contents_363);
+			fh_363.style.display='none';
+			document.close();
+		}
+	}
+	catch(e)
+	{
+		dlWrite();
+	}
+}else{dlWrite();}
+function dlWrite(){
+	if(!fh_363 || typeof(inDapMgrIf) == "undefined")
+	{	
+		document.write(contents_363);
+	}
+	else
+	{
+		var elemSpan = document.createElement("span");
+		elemSpan.innerHTML = contents_363;
+		fh_363.parentNode.insertBefore(elemSpan, fh_363.parentNode.firstChild);
+		fh_363.style.display='none';
+	}
+	document.close();
+}
+//]]>

@@ -1,0 +1,44 @@
+
+//<![CDATA[
+var contents_81 = '<span><a target="_blank" href="http://g.msn.com/0AD00002/1687988.1?!&amp;&amp;PID=7565303&amp;UIT=G&amp;TargetID=8071606&amp;AN=1660947403&amp;PG=CAE9TX">Find a great job with MSN Careers.</A></span>';
+var fh_81 = null;
+if (document.body && document.body.id && document.body.id.length > 0)
+{
+	fh_81=parent.document.getElementById(document.body.id);
+}
+
+if (navigator.appVersion.indexOf("Win")>=0 && parseFloat(navigator.appVersion.substr(navigator.appVersion.indexOf("MSIE ")+5))>=4)
+{
+	try
+	{
+		if(!fh_81 || typeof(inDapIF) == "undefined")
+		{
+			dlWrite();
+		}
+		else
+		{
+			fh_81.parentNode.insertAdjacentHTML('afterBegin', contents_81);
+			fh_81.style.display='none';
+			document.close();
+		}
+	}
+	catch(e)
+	{
+		dlWrite();
+	}
+}else{dlWrite();}
+function dlWrite(){
+	if(!fh_81 || typeof(inDapMgrIf) == "undefined")
+	{	
+		document.write(contents_81);
+	}
+	else
+	{
+		var elemSpan = document.createElement("span");
+		elemSpan.innerHTML = contents_81;
+		fh_81.parentNode.insertBefore(elemSpan, fh_81.parentNode.firstChild);
+		fh_81.style.display='none';
+	}
+	document.close();
+}
+//]]>

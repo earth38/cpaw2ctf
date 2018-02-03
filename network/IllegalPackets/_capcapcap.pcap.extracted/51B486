@@ -1,0 +1,18 @@
+<SCRIPT Language="Javascript">
+var DCcode = "N4682.MSN/B4036843.24";
+var DCwidth = "728";
+var DCheight = "90";
+var randNum = Math.floor(Math.random() * 100000000) + 100000000;
+var iframesrc = "http://ad.doubleclick.net/adi/" + DCcode + ";sz=" + DCwidth + "x" + DCheight + ";ord=" + randNum + "?click=http://clk.atdmt.com/goiframe/193597746.193347367/155580746/direct/01%3fhref=";
+var scriptsrc = "http://ad.doubleclick.net/adj/" + DCcode + ";abr=!ie;sz=" + DCwidth + "x" + DCheight + ";ord=" + randNum + "?click=http://clk.atdmt.com/goiframe/193597746.193347367/155580746/direct/01%3fhref=";
+var clickRedirect = "http://ad.doubleclick.net/jump/" + DCcode + ";abr=!ie4;abr=!ie5;sz=" + DCwidth + "x" + DCheight + ";ord=" + randNum + "?click=http://clk.atdmt.com/goiframe/193597746.193347367/155580746/direct/01%3fhref=";
+var viewRedirect = "http://ad.doubleclick.net/ad/" + DCcode + ";abr=!ie4;abr=!ie5;sz=" + DCwidth + "x" + DCheight + ";ord=" + randNum + "?click=http://clk.atdmt.com/goiframe/193597746.193347367/155580746/direct/01%3fhref=";
+document.write("<ifra" + "me src=" + iframesrc + " width=" + DCwidth + " height=" + DCheight + " marginwidth=0 marginheight=0 hspace=0 vspace=0 frameborder=0 scrolling=no>");
+document.write("<scr" + "ipt language=JavaScript1.1 src=" + scriptsrc + " >");
+document.write("</scr" + "ipt>");
+document.write("<nos" + "cript>");
+document.write("<a " + "href=" + clickRedirect + " target=_blank><img src=" + viewRedirect + " alt='' border=0>");
+document.write("</" + "a>");
+document.write("</nos" + "cript>");
+document.write("</ifra" + "me>")
+</SCRIPT>
